@@ -1,4 +1,4 @@
-const eqArrays = function (arr1, arr2) {
+const eqArrays = function(arr1, arr2) {
   if (arr1.length !== arr2.length) {
     return false;
   }
@@ -11,13 +11,13 @@ const eqArrays = function (arr1, arr2) {
 
 };
 
-const assertArraysEqual = function (arr1, arr2) {
+const assertArraysEqual = function(arr1, arr2) {
   if (eqArrays(arr1, arr2)) {
-    console.log(`${arr1} === ${arr2}`)
+    console.log(`${arr1} === ${arr2}`);
   } else {
-    console.log(`${arr1} !== ${arr2}`)
+    console.log(`${arr1} is not === to ${arr2}`);
   }
-}
+};
 
 const middle = function(array) {
   if (array.length < 3) {
