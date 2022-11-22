@@ -1,23 +1,26 @@
-const eqArrays = function(arr1, arr2) {
-  if (arr1.length !== arr2.length) {
-    return false;
-  }
-  for (let i = 0; i < arr1.length; i++) {
-    if (arr1[i] !== arr2[i]) {
-      return false;
-    }
-  }
-  return true;
+// const eqArrays = function(arr1, arr2) {
+//   if (arr1.length !== arr2.length) {
+//     return false;
+//   }
+//   for (let i = 0; i < arr1.length; i++) {
+//     if (arr1[i] !== arr2[i]) {
+//       return false;
+//     }
+//   }
+//   return true;
 
-};
+// };
 
-const assertArraysEqual = function(arr1, arr2) {
-  if (eqArrays(arr1, arr2)) {
-    console.log(`${arr1} === ${arr2}`);
-  } else {
-    console.log(`${arr1} is not === to ${arr2}`);
-  }
-};
+// const assertArraysEqual = function(arr1, arr2) {
+//   if (eqArrays(arr1, arr2)) {
+//     console.log(`${arr1} === ${arr2}`);
+//   } else {
+//     console.log(`${arr1} is not === to ${arr2}`);
+//   }
+// };
+
+//const eqArrays = require('../eqArrays');
+const assertArraysEqual = require('./assertArraysEqual');
 
 const middle = function(array) {
   if (array.length < 3) {
@@ -41,4 +44,6 @@ const middle = function(array) {
   }
 };
 
-console.log(middle([1, 2, 3, 4, 5, 6]));
+module.exports = middle;
+
+//console.log(middle([1, 2, 3, 4, 5, 6]));
