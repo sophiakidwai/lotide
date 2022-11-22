@@ -1,10 +1,10 @@
 //Implement the definition for function eqObjects which will take in two objects and returns true or false, based on a perfect match.
 
 const assertEqual = function(actual, expected) {
-  if (actual === expected){
-    console.log(`💚💚💚Assertion Passed: ${actual} === ${expected}`)
-  } else if (actual !== expected){
-  console.log(`❌❌❌Assertion Failed: ${actual} !== ${expected}`);
+  if (actual === expected) {
+    console.log(`💚💚💚Assertion Passed: ${actual} === ${expected}`);
+  } else if (actual !== expected) {
+    console.log(`❌❌❌Assertion Failed: ${actual} !== ${expected}`);
   }
 };
 
